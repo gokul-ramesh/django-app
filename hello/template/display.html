@@ -1,0 +1,25 @@
+<html>
+<head>
+	<title>Display Table</title>
+</head>
+<body>
+	<h1 style="text-align:center;"> Database view </h1><br/><br/>
+	<center>
+<table style="text-align:center;width: 30%">
+    <tr style="font-size: 130%">
+    	<th>S.No</th>
+        <th>Books</th>
+        <th>Authors</th>
+    </tr>
+    {% for item in query %}
+    <tr> 
+    	<td>{{item.id}}.</td>
+        <td>{{ item.name }}</td><t>
+        <td>{{ item.author.name }}</td>
+
+    </tr>
+    {% endfor %}
+</table>
+</center>
+</body>
+</html>

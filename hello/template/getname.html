@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>ADD ENTRY </title>
+</head>
+
+<body>
+	
+<h1 style="text-align:center;"><b>Submit Author and Book</b></h1>
+	<br/>
+	<br/>
+	<br/>
+<form style="text-align:center;" action="" method="POST">
+{% csrf_token %}
+Enter author name: <input type="text" name="author"/><br/><br/>
+  Enter book name   : <input type="text" name="book"><br/><br/>
+<input type="submit" value="Submit"/>
+<br/>
+<br/>
+
+<a href="http://127.0.0.1:8000/display/"><button type='button'>Display All Entries</button></a>
+</form>
+
+</body>
+
+</html>
