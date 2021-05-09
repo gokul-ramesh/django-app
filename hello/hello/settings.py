@@ -56,7 +56,7 @@ ROOT_URLCONF = 'hello.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['/home/gokul/Desktop/TGB/project1/hello/template/'],
+        'DIRS': [BASE_DIR /'template/'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
